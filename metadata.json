@@ -1,0 +1,6 @@
+{
+  "name": "Solo Traveler",
+  "description": "A modern travel and exploration app for Solo (Surakarta), featuring local tour guides, hotel bookings, interactive road trip maps, and itinerary discovery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

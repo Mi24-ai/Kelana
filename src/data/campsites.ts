@@ -1,0 +1,40 @@
+import type { Campsite } from "../types";
+
+export const campsites: Campsite[] = [
+  {
+    id: "camp-lawu-park",
+    name: "Lawu Park Campground",
+    area: "Cemoro Sewu, jalur pendakian Gunung Lawu",
+    rating: 4.7,
+    reviewCount: 210,
+    pricePerNight: 150000,
+    tentType: "Tenda dome kapasitas 4 (disediakan)",
+    capacity: 4,
+    facilities: ["Sewa alat camping", "Api unggun", "Toilet umum", "Warung makan"],
+    description: "Area camping kaki Gunung Lawu dengan udara sejuk dan pemandangan sunrise terbaik di Jawa Tengah.",
+  },
+  {
+    id: "camp-kemuning-glamping",
+    name: "Kemuning Glamping Valley",
+    area: "Kemuning, Karanganyar",
+    rating: 4.9,
+    reviewCount: 340,
+    pricePerNight: 650000,
+    tentType: "Glamping dome dengan kasur & listrik",
+    capacity: 2,
+    facilities: ["Kasur nyaman", "Listrik & lampu", "Kamar mandi dalam", "Kebun teh sekitar"],
+    description: "Glamping di tengah kebun teh Kemuning, cocok untuk konten Instagram dan staycation santai.",
+  },
+  {
+    id: "camp-waduk-cengklik",
+    name: "Camp Waduk Cengklik",
+    area: "Boyolali, tepi waduk",
+    rating: 4.4,
+    reviewCount: 76,
+    pricePerNight: 100000,
+    tentType: "Bawa tenda sendiri (lahan disediakan)",
+    capacity: 6,
+    facilities: ["Area lapang", "Spot memancing", "Warung sekitar"],
+    description: "Camping tepi waduk dengan pemandangan matahari terbenam, favorit untuk acara komunitas outdoor.",
+  },
+];

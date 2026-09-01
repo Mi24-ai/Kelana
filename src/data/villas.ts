@@ -1,0 +1,43 @@
+import type { Villa } from "../types";
+
+export const villas: Villa[] = [
+  {
+    id: "villa-lereng-lawu",
+    name: "Villa Lereng Lawu",
+    area: "Tawangmangu, lereng Gunung Lawu",
+    rating: 4.8,
+    reviewCount: 156,
+    pricePerNight: 1450000,
+    capacity: 8,
+    bedrooms: 3,
+    facilities: ["Kolam renang pribadi", "Bbq area", "Wifi gratis", "Dapur lengkap", "Pemandangan gunung"],
+    description: "Villa 3 kamar dengan kolam renang privat menghadap Gunung Lawu, udara sejuk cocok untuk keluarga besar.",
+    illustration: "villa-pool",
+  },
+  {
+    id: "villa-joglo-boyolali",
+    name: "Villa Joglo Boyolali",
+    area: "Boyolali, dekat Waduk Cengklik",
+    rating: 4.6,
+    reviewCount: 88,
+    pricePerNight: 980000,
+    capacity: 6,
+    bedrooms: 2,
+    facilities: ["Kolam renang", "Wifi gratis", "Taman luas", "Api unggun"],
+    description: "Rumah joglo autentik yang direnovasi modern, dikelilingi sawah dan pemandangan waduk.",
+    illustration: "hotel-joglo",
+  },
+  {
+    id: "villa-riverside-solo",
+    name: "Villa Riverside Solo",
+    area: "Tepi Bengawan Solo, Jebres",
+    rating: 4.5,
+    reviewCount: 64,
+    pricePerNight: 750000,
+    capacity: 4,
+    bedrooms: 2,
+    facilities: ["Wifi gratis", "Teras tepi sungai", "Dapur lengkap"],
+    description: "Villa mungil tepi Bengawan Solo, cocok untuk pasangan atau kelompok kecil yang ingin suasana tenang.",
+    illustration: "hotel-resort",
+  },
+];

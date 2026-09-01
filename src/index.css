@@ -1,0 +1,114 @@
+﻿@import "tailwindcss";
+
+@theme {
+  /* ===== Typography =====
+     Display: Playfair Display — the editorial heritage voice for H1/H2/prices
+     Accent:  Cormorant Garamond italic — quiet, elegant eyebrow/quote voice
+     Body:    Plus Jakarta Sans — clean, modern UI text
+     Mono:    IBM Plex Mono — tabular numbers, times, booking codes           */
+  --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-accent: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* ===== Color tokens — Nusantara heritage palette ===== */
+  --color-indigo-950: #2A1710;
+  --color-indigo-900: #3D2016;
+  --color-indigo-800: #4E2A1B;
+  --color-indigo-700: #603522;
+
+  --color-gold-100: #FBF0D4;
+  --color-gold-300: #F3DA9C;
+  --color-gold-400: #E8C36E;
+  --color-gold-500: #C89B3C;
+  --color-gold-900: #7A5A18;
+
+  --color-clay-500: #A6432A;
+  --color-clay-600: #8A3520;
+
+  --color-parchment-50: #FBF5E7;
+  --color-parchment-100: #F5ECD6;
+  --color-parchment-200: #EFE3C4;
+  --color-parchment-300: #E2CE9E;
+
+  --color-ink-300: #A8967A;
+  --color-ink-500: #6B5D48;
+  --color-ink-700: #3B2F20;
+  --color-ink-900: #221D16;
+
+  --color-emerald-500: #3F9469;
+  --color-emerald-700: #1F6B45;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-parchment-50);
+    color: var(--color-ink-900);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .font-accent {
+    font-family: var(--font-accent);
+  }
+
+  /* Signature "framed heirloom" card border — thin gold rule + soft lift,
+     used for anything meant to feel like a kept object (a ticket, a stamp,
+     a booking sheet) rather than a generic panel. */
+  .heritage-frame {
+    border: 1px solid color-mix(in srgb, var(--color-gold-500) 45%, transparent);
+    box-shadow:
+      0 1px 0 0 color-mix(in srgb, var(--color-gold-500) 30%, transparent) inset,
+      0 12px 30px -18px rgba(39, 31, 99, 0.35);
+  }
+
+  .sunset-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(175deg, #FBEAC9 0%, #F6D49C 55%, #F0BE7F 100%);
+  }
+
+  .bg-batik-dot {
+    background-image: radial-gradient(var(--color-gold-500) 0.75px, transparent 0.75px);
+    background-size: 16px 16px;
+    background-position: 0 0;
+  }
+}
+
+@keyframes rise {
+  from { transform: translateY(24px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-rise { animation: rise 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+
+@keyframes stamp {
+  0% { transform: scale(0.4) rotate(-8deg); opacity: 0; }
+  100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes floatSlower {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.animate-float-slow { animation: floatSlow 6s ease-in-out infinite; }
+.animate-float-slower { animation: floatSlower 8s ease-in-out infinite; }
+
+@keyframes fadeUp {
+  from { transform: translateY(14px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-fade-up { animation: fadeUp 0.45s ease-out both; }

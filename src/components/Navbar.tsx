@@ -53,7 +53,6 @@ export default function Navbar({
             Ke<span className="text-[var(--color-clay-500)]">lana</span>
           </span>
         </button>
-
         <nav className="hidden items-center gap-1 md:flex">
           {NAV_ITEMS.map((item) => (
             <button

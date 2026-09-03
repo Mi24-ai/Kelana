@@ -37,10 +37,23 @@ export default function Navbar({
           }}
           className="flex items-center gap-2.5"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-indigo-800)] text-[var(--color-gold-300)]">
-            <Map size={18} strokeWidth={2.2} />
-          </span>
-          <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">
+<button
+  onClick={() => {
+    onNavigate("home");
+    setOpen(false);
+  }}
+  className="flex items-center gap-2.5"
+>
+  <img
+    src="/logo.jpeg"
+    alt="Kelana logo"
+    className="h-9 w-9 rounded-full object-cover"
+  />
+  <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">
+    Ke<span className="text-[var(--color-clay-500)]">lana</span>
+  </span>
+</button>         
+ <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">
             Ke<span className="text-[var(--color-clay-500)]">lana</span>
           </span>
         </button>

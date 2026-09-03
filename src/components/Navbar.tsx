@@ -48,11 +48,7 @@ export default function Navbar({
     src="/logo.jpeg"
     alt="Kelana logo"
     className="h-9 w-9 rounded-full object-cover"
-  />
-  <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">
-    Ke<span className="text-[var(--color-clay-500)]">lana</span>
-  </span>
-</button>         
+  />   
  <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">
             Ke<span className="text-[var(--color-clay-500)]">lana</span>
           </span>

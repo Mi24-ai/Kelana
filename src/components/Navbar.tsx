@@ -38,7 +38,7 @@ export default function Navbar({
           className="flex items-center gap-2.5"
         >
           <img
-            src="/logo.jpeg"
+            src="/image/logo.jpeg"
             alt="Kelana logo"
             className="h-9 w-9 rounded-full object-cover"
           />

@@ -1,4 +1,4 @@
-import { Menu, Plane, TrainFront, Building2, Users, Map, X, ChevronDown, Home, Bus, Tent, ShoppingBasket } from "lucide-react";
+import { Menu, TrainFront, Building2, Users, Map, X, ChevronDown, Home, Bus, Tent, ShoppingBasket, Plane } from "lucide-react";
 import { useState } from "react";
 import type { PageKey } from "../types";
 
@@ -37,22 +37,16 @@ export default function Navbar({
           }}
           className="flex items-center gap-2.5"
         >
-<button
-  onClick={() => {
-    onNavigate("home");
-    setOpen(false);
-  }}
-  className="flex items-center gap-2.5"
->
-  <img
-    src="/logo.jpeg"
-    alt="Kelana logo"
-    className="h-9 w-9 rounded-full object-cover"
-  />   
- <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">
+          <img
+            src="/logo.png"
+            alt="Kelana logo"
+            className="h-9 w-9 rounded-full object-cover"
+          />
+          <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">
             Ke<span className="text-[var(--color-clay-500)]">lana</span>
           </span>
         </button>
+
         <nav className="hidden items-center gap-1 md:flex">
           {NAV_ITEMS.map((item) => (
             <button

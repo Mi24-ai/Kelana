@@ -3,18 +3,18 @@ import { useState } from "react";
 import type { PageKey } from "../types";
 
 const NAV_ITEMS: { key: PageKey; label: string; icon: React.ReactNode }[] = [
-  { key: "flights", label: "Pesawat", icon: <Plane size={16} /> },
-  { key: "trains", label: "Kereta", icon: <TrainFront size={16} /> },
-  { key: "hotels", label: "Hotel", icon: <Building2 size={16} /> },
-  { key: "guides", label: "Tour Guide", icon: <Users size={16} /> },
-  { key: "roadtrip", label: "Jelajah Rute", icon: <Map size={16} /> },
+  { key: "flights", label: "Kelana Go", icon: <Plane size={16} /> },
+  { key: "trains", label: "Kelana Go", icon: <TrainFront size={16} /> },
+  { key: "hotels", label: "Kelana Rest", icon: <Building2 size={16} /> },
+  { key: "guides", label: "Kelana Local", icon: <Users size={16} /> },
+  { key: "roadtrip", label: "Kelana Explore", icon: <Map size={16} /> },
   { key: "solobox", label: "SoloBox", icon: <ShoppingBasket size={16} /> },
 ];
 
 const MORE_ITEMS: { key: PageKey; label: string; icon: React.ReactNode }[] = [
-  { key: "villas", label: "Villa", icon: <Home size={16} /> },
-  { key: "buses", label: "Bus", icon: <Bus size={16} /> },
-  { key: "camping", label: "Camping", icon: <Tent size={16} /> },
+  { key: "villas", label: "Kelana Rest", icon: <Home size={16} /> },
+  { key: "buses", label: "Kelana Go", icon: <Bus size={16} /> },
+  { key: "camping", label: "Kelana Rest", icon: <Tent size={16} /> },
 ];
 
 export default function Navbar({

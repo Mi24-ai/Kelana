@@ -1,4 +1,4 @@
-import { Plane, Building2, TrainFront, Home, Bus, Flag, Tent, ShoppingBasket } from "lucide-react";
+import { Plane, Building2, TrainFront, Home, Bus, User, Tent, ShoppingBasket } from "lucide-react";
 import type { PageKey } from "../types";
 
 const SERVICES: { key: PageKey; label: string; icon: React.ReactNode }[] = [
@@ -7,7 +7,7 @@ const SERVICES: { key: PageKey; label: string; icon: React.ReactNode }[] = [
   { key: "trains", label: "Kereta", icon: <TrainFront size={22} /> },
   { key: "villas", label: "Villa", icon: <Home size={22} /> },
   { key: "buses", label: "Bus", icon: <Bus size={22} /> },
-  { key: "guides", label: "Tour Guide", icon: <Flag size={22} /> },
+  { key: "guides", label: "Tour Guide", icon: <User size={22} /> },
   { key: "camping", label: "Camping", icon: <Tent size={22} /> },
   { key: "solobox", label: "SoloBox", icon: <ShoppingBasket size={22} /> },
 ];

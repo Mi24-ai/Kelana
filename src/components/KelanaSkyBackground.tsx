@@ -16,7 +16,7 @@ export default function BatikMotifBackground({ className = "" }: Props) {
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/images/kelana-bg.jpeg')` }}
+        style={{ backgroundImage: `url('/image/kelana bg.jpeg')` }}
       />
       {/* overlay tipis agar konten di atasnya kontras & tetap terbaca */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--color-ink-900)]/25" />

@@ -38,7 +38,7 @@ export default function Navbar({
           className="flex items-center gap-2.5"
         >
                <img
-            src="/image/logo.jpeg"
+            src="/image/logo new.jpeg"
             className="h-9 w-9 rounded-full object-cover"
           />
           <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">

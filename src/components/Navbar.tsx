@@ -1,20 +1,20 @@
-import { Menu, TrainFront, Building2, Users, Map, X, ChevronDown, Home, Bus, Tent, ShoppingBasket, Plane } from "lucide-react";
+import { Menu, TrainFront, Building2, User, Map, X, ChevronDown, Home, Bus, Tent, ShoppingBasket, Plane } from "lucide-react";
 import { useState } from "react";
 import type { PageKey } from "../types";
 
 const NAV_ITEMS: { key: PageKey; label: string; icon: React.ReactNode }[] = [
-  { key: "flights", label: "Kelana Go", icon: <Plane size={16} /> },
-  { key: "trains", label: "Kelana Go", icon: <TrainFront size={16} /> },
-  { key: "hotels", label: "Kelana Rest", icon: <Building2 size={16} /> },
-  { key: "guides", label: "Kelana Local", icon: <Users size={16} /> },
+  { key: "flights", label: "Kelana Go Plane", icon: <Plane size={16} /> },
+  { key: "trains", label: "Kelana Go Train", icon: <TrainFront size={16} /> },
+  { key: "hotels", label: "Kelana Rest Hotel", icon: <Building2 size={16} /> },
+  { key: "guides", label: "Kelana Guide", icon: <User size={16} /> },
   { key: "roadtrip", label: "Kelana Explore", icon: <Map size={16} /> },
   { key: "solobox", label: "SoloBox", icon: <ShoppingBasket size={16} /> },
 ];
 
 const MORE_ITEMS: { key: PageKey; label: string; icon: React.ReactNode }[] = [
-  { key: "villas", label: "Kelana Rest", icon: <Home size={16} /> },
-  { key: "buses", label: "Kelana Go", icon: <Bus size={16} /> },
-  { key: "camping", label: "Kelana Rest", icon: <Tent size={16} /> },
+  { key: "villas", label: "Kelana Rest Villa", icon: <Home size={16} /> },
+  { key: "buses", label: "Kelana Go Bus", icon: <Bus size={16} /> },
+  { key: "camping", label: "Kelana Rest Camping", icon: <Tent size={16} /> },
 ];
 
 export default function Navbar({
@@ -37,8 +37,8 @@ export default function Navbar({
           }}
           className="flex items-center gap-2.5"
         >
-               <img
-            src="/image/logo new.jpeg"
+          <img
+            src="/image/logo.jpeg"
             className="h-9 w-9 rounded-full object-cover"
           />
           <span className="font-sans text-xl font-extrabold tracking-tight text-[var(--color-indigo-800)]">

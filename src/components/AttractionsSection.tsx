@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BookOpen, ChevronDown, MapPin } from "lucide-react";
+import { BookOpen, ChevronDown, MapPin, Ticket } from "lucide-react";
 import BatikDivider from "./BatikDivider";
 import { attractions } from "../data/attractions";
 
@@ -21,7 +21,6 @@ export default function AttractionsSection() {
             yang bikin kunjungan terasa lebih dari sekadar foto-foto.
           </p>
         </div>
-
         <div className="grid gap-5 md:grid-cols-2">
           {attractions.map((a) => {
             const isOpen = expanded === a.id;
@@ -41,11 +40,15 @@ export default function AttractionsSection() {
                   <h3 className="font-[var(--font-display)] text-lg font-semibold text-[var(--color-indigo-800)]">
                     {a.name}
                   </h3>
-                  <p className="mt-0.5 flex items-center gap-1 text-xs text-[var(--color-ink-500)]">
-                    <MapPin size={12} /> {a.area}
-                  </p>
+                  <div className="mt-0.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--color-ink-500)]">
+                    <span className="flex items-center gap-1">
+                      <MapPin size={12} /> {a.area}
+                    </span>
+                    <span className="flex items-center gap-1 font-medium text-[var(--color-clay-500)]">
+                      <Ticket size={12} /> HTM: {a.htm}
+                    </span>
+                  </div>
                   <p className="mt-3 text-sm leading-relaxed text-[var(--color-ink-700)]">{a.teaser}</p>
-
                   {a.story && (
                     <div className="mt-3">
                       <button

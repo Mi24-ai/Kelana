@@ -9,6 +9,7 @@ export interface Attraction {
   image: string;
   teaser: string;
   story?: string;
+  htm: string;
 }
 
 /**
@@ -28,6 +29,7 @@ export const attractions: Attraction[] = [
       "Istana resmi yang masih dihuni dan berfungsi hingga sekarang. Museumnya menyimpan kereta kencana pusaka, gamelan kuno, dan koleksi keraton yang jarang dipamerkan di tempat lain.",
     story:
       "Keraton ini didirikan tahun 1745 setelah Susuhunan Pakubuwono II memindahkan pusat kerajaan dari Kartasura, yang saat itu porak-poranda akibat pemberontakan Geger Pecinan. Lokasi baru dipilih lewat petunjuk spiritual, dan hingga kini masyarakat Solo masih menganggap kompleks ini sebagai pusat kosmologi kota — segaris lurus dengan Gunung Lawu dan Laut Selatan.",
+    htm: "Rp15.000 (domestik) / Rp30.000 (mancanegara)",
   },
   {
     id: "pura-mangkunegaran",
@@ -40,6 +42,7 @@ export const attractions: Attraction[] = [
       "Pendopo tanpa sekat berusia dua abad dengan langit-langit bermotif zodiak Jawa-Eropa. Koleksi keris, topeng, dan perhiasan kerajaannya bisa dilihat dari jarak sangat dekat.",
     story:
       "Berdiri sejak 1757, praja ini lahir dari perjuangan Raden Mas Said — dikenal sebagai Pangeran Sambernyawa karena keberaniannya melawan VOC selama bertahun-tahun sebelum akhirnya berdamai lewat Perjanjian Salatiga. Gelar 'Sambernyawa' sendiri berarti 'penyabar nyawa', julukan yang diberikan lawannya sendiri karena kegigihannya di medan perang.",
+    htm: "Rp20.000",
   },
   {
     id: "kampung-batik-laweyan",
@@ -52,6 +55,7 @@ export const attractions: Attraction[] = [
       "Gang-gang sempit berusia ratusan tahun berisi rumah produksi batik asli. Bisa masuk langsung ke workshop-nya, lihat proses canting, bahkan coba membatik sendiri.",
     story:
       "Laweyan diperkirakan sudah jadi sentra perdagangan batik sejak era Kerajaan Pajang di abad ke-16, jauh sebelum Solo berdiri sebagai kota. Para 'juragan batik' di sini dulu termasuk golongan pedagang terkaya di Jawa, tercermin dari rumah-rumah bergaya indis besar dengan tembok tinggi yang masih berdiri di sepanjang gang hingga sekarang.",
+    htm: "Gratis (area kampung terbuka; biaya workshop membatik menyesuaikan tempat)",
   },
   {
     id: "ngarsopuro-night-market",
@@ -64,6 +68,7 @@ export const attractions: Attraction[] = [
       "Tiap Sabtu malam, jalan di depan Pura Mangkunegaran berubah jadi pasar malam penuh kuliner kaki lima, kerajinan lokal, dan pertunjukan seni jalanan.",
     story:
       "Kawasan ini direvitalisasi pada 2009 sebagai bagian dari upaya menghidupkan kembali ruang publik heritage Solo — jalur yang sama dulunya rute prosesi kerajaan Mangkunegaran. Sekarang jadi salah satu ruang publik paling ramai di kota, mempertemukan pedagang legendaris dengan generasi muda.",
+    htm: "Gratis (bayar sesuai jajanan/barang yang dibeli)",
   },
   {
     id: "grojogan-sewu",
@@ -76,6 +81,7 @@ export const attractions: Attraction[] = [
       "Air terjun setinggi 81 meter di lereng barat Gunung Lawu, dikelilingi hutan pinus sejuk. Jalur turunnya berupa anak tangga di antara pepohonan besar, jadi trekking ringan yang menyegarkan.",
     story:
       "Nama 'Grojogan Sewu' berarti 'air terjun seribu' dalam bahasa Jawa — bukan menandakan seribu air terjun literal, melainkan ungkapan untuk derasnya dan banyaknya percikan air yang jatuh dari tebing, seolah pecah jadi ribuan aliran kecil saat menghantam bebatuan di bawahnya.",
+    htm: "Rp27.000 (hari biasa) / Rp29.900 (akhir pekan)",
   },
   {
     id: "candi-cetho-sukuh",
@@ -88,5 +94,6 @@ export const attractions: Attraction[] = [
       "Dua candi Hindu peninggalan akhir era Majapahit dengan arsitektur punden berundak yang unik, jauh berbeda dari candi Jawa pada umumnya. Suasananya tenang, berkabut, dan cocok untuk yang suka jalur agak menanjak.",
     story:
       "Konon kedua candi ini dibangun menjelang runtuhnya Majapahit, saat sisa-sisa bangsawan dan pendeta kerajaan menyingkir ke lereng Gunung Lawu. Masyarakat setempat masih memercayai bahwa Prabu Brawijaya V, raja terakhir Majapahit, moksa (menghilang secara gaib) di kawasan Lawu — menjadikan gunung ini tempat yang dianggap sakral hingga kini.",
+    htm: "Sekitar Rp10.000 per candi (mohon verifikasi terbaru)",
   },
 ];

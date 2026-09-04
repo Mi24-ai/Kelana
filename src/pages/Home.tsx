@@ -40,7 +40,7 @@ export default function Home({
       <section className="relative overflow-hidden px-5 pb-16 pt-14 text-center md:pb-24 md:pt-20">
         <BatikMotifBackground />
         <div className="relative z-10 mx-auto max-w-3xl">
-          <p className="mb-3 inline-block rounded-full border border-[var(--color-gold-500)]/60 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-[var(--color-gold-300)]">
+          <p className="mb-3 inline-block rounded-full border border-[var(--color-clay-500)]/60 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-[var(--color-clay-500)]">
             Surakarta · Jawa Tengah
           </p>
           <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight text-[var(--color-parchment-50)] md:text-6xl">
